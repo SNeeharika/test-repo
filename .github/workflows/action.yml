@@ -1,0 +1,21 @@
+name: "Action"
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'vars/$Project_Id/$Cluster_name.txt'
+  push:
+    branches:
+      - main
+    paths:
+      - 'vars/$Project_Id/$Cluster_name.txt'
+env:
+  Project_Id: project-1
+  Cluster_name: c1
+jobs:
+  job1:
+    name: Job
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
