@@ -8,8 +8,8 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'vars/project-1/c1.txt'
+    #paths:
+    #  - 'vars/project-1/c1.txt'
 env:
   Project_Id: project-1
   Cluster_name: c1
