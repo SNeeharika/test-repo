@@ -11,11 +11,11 @@ on:
     paths:
       - 'vars/project-1/c1.txt'
 env:
-  Project_Id: project-1
+  Project_Id: project-345
   Cluster_name: c1
 jobs:
   call-workflow:
     uses: ./.github/workflows/called.yml
     with:
-      Project_Id: project-1
+      Project_Id: $Project_Id
     secrets: inherit
