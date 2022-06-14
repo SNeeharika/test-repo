@@ -1,6 +1,10 @@
 name : 'Test'
 on:
   workflow_call:
+    inputs:
+      Project_Id:
+        required: true
+        type: string
 env:
   Project_Id: project-3
 jobs:
@@ -8,4 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: my-step
-        run: echo $Project_Id
+        run: echo ${{inputs.Project_Id}}
