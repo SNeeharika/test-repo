@@ -15,5 +15,5 @@ env:
   Cluster_name: c1
 jobs:
   call-workflow:
-    uses: ./.github/workflows/action.yml
+    uses: ./.github/workflows/called.yml
     secrets: inherit
