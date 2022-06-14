@@ -1,15 +1,5 @@
 name: "Action"
-on:
-  pull_request:
-    branches:
-      - main
-    paths:
-      - 'vars/project-1/c1.txt'
-  push:
-    branches:
-      - main
-    #paths:
-    #  - 'vars/project-1/c1.txt'
+on: push
 env:
   Project_Id: project-1
   Cluster_name: c1
