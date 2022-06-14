@@ -10,4 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: my-step
-        run: echo ${{inputs.Project_Id}}
+        run: |
+             echo ${{inputs.Project_Id}}
+             echo ${{ secrets.SECRET_1 }}
+             
