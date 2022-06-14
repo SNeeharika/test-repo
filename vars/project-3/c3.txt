@@ -1,1 +1,1 @@
-This is cluster 3
+This is Cluster 3
