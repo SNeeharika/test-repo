@@ -4,12 +4,12 @@ on:
     branches:
       - main
     paths:
-      - 'vars/$Project_Id/$Cluster_name.txt'
+      - 'vars/project-1/c1.txt'
   push:
     branches:
       - main
     paths:
-      - 'vars/$Project_Id/$Cluster_name.txt'
+      - 'vars/project-1/c1.txt'
 env:
   Project_Id: project-1
   Cluster_name: c1
