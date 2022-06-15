@@ -4,12 +4,12 @@ on:
     branches:
       - master
     paths:
-      - 'vars/project-2/c1.txt'
+      - 'vars/project-2/c2.txt'
   push:
     branches:
       - master
     paths:
-      - 'vars/project-2/c1.txt'
+      - 'vars/project-2/c2.txt'
 jobs:
   call-workflow:
     uses: ./.github/workflows/called.yml
