@@ -12,5 +12,4 @@ jobs:
       - name: my-step
         run: |
              echo ${{inputs.Project_Id}}
-             echo ${{ secrets.SECRET_1 }}
              
