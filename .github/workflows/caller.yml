@@ -12,7 +12,7 @@ on:
       - 'vars/project-1/c1.txt'
 jobs:
   call-workflow:
-    uses: ./.github/workflows/calledtest.yml
+    uses: ./.github/workflows/called.yml
     with:
       Project_Id: project-1
     secrets: inherit
