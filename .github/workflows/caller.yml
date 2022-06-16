@@ -7,12 +7,12 @@ on:
       - 'vars/project-1/c1.txt'
   push:
     branches:
-      - master
+      - test
     paths:
       - 'vars/project-1/c1.txt'
 jobs:
   call-workflow:
-    uses: ./.github/workflows/called.yml
+    uses: ./.github/workflows/calledtest.yml
     with:
       Project_Id: project-1
     secrets: inherit
