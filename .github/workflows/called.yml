@@ -5,9 +5,9 @@ on:
       Project_Id:
         required: true
         type: string
-    secrets:  
-      Secret1:
-        required: true
+    #secrets:  
+    #  Secret1:
+    #    required: true
 jobs:
   my-job:
     runs-on: ubuntu-latest
@@ -15,5 +15,5 @@ jobs:
       - name: my-step
         run: |
              echo ${{inputs.Project_Id}}
-             echo ${{ secrets.Secret1 }}
+             echo ${{ secrets.SECRET_1 }}
              
