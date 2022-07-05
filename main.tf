@@ -1,17 +1,17 @@
 provider "google" {
   version = "3.5.0"
   #credentials = file("/downloads/compute-instance.json")
-  project = "linen-walker-346109"
+  project = var.project
   region  = "us-central1"
   zone    = "us-central1-c"
 }
 
 resource "google_compute_network" "vpc_network" {
-  name = "terraform-network"
+  name = var.network_name
 }
 resource "google_compute_instance" "vm_instance" {
   name         = "terraform-instance2"
-  machine_type = "f1-micro"
+  machine_type = var.machine_type
   zone         = "us-central1-c"
   boot_disk {
     initialize_params {
