@@ -13,7 +13,7 @@ jobs:
     name: 'job1'
     runs-on: ubuntu-latest
     steps:
-    - run: echo $gh secret list
+    - run: echo $(gh secret list)
   terraform:
     name: 'Terraform'
     runs-on: ubuntu-latest
