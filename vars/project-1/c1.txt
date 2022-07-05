@@ -1,4 +1,2 @@
 This is Cluster 1
-78
-
-dgj
+7
