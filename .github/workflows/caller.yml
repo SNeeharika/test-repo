@@ -15,6 +15,7 @@ jobs:
     uses: ./.github/workflows/called.yml
     with:
       Project_Id: project-1
+      Name: SILVER
     secrets: inherit
     #Credentials: ${{ secrets.GOOGLE_CREDENTIALS }}
 
