@@ -14,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: echo $(gh secret list)
+      env:
+         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   terraform:
     name: 'Terraform'
     runs-on: ubuntu-latest
