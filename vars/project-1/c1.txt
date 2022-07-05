@@ -1,3 +1,2 @@
 This is Cluster 1
-678
-074
+67
