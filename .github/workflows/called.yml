@@ -5,19 +5,19 @@ on:
       Project_Id:
         required: true
         type: string
-    secrets:  
-      Credentials:
+      Name:
         required: true
+        type: string
+env:
+  Credentials: ${{ secrets.Name }}
 jobs:
   job1:
     name: 'job1'
     runs-on: ubuntu-latest
     steps:
     - run: |
-         ls -la
-         echo $(gh secret list)
-      env:
-         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          echo $Credentials
+ 
   terraform:
     name: 'Terraform'
     runs-on: ubuntu-latest
