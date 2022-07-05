@@ -9,7 +9,7 @@ on:
         required: true
         type: string
 env:
-  Credentials: ${{ secrets.Name }}
+  Credentials: ${{ secrets.${{ inputs.Name }} }}
 jobs:
   job1:
     name: 'job1'
