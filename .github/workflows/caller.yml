@@ -12,7 +12,7 @@ on:
       - 'vars/project-1/c1.txt'
 jobs:
   call-workflow:
-    uses: ./.github/workflows/template/called.yml
+    uses: ./.github/workflows/template/template.yml
     with:
       Project_Id: project-1
       Name: SILVER
