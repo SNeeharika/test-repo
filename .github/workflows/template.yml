@@ -20,11 +20,14 @@ jobs:
     steps:
     - run: |
           echo $Credentials
+          lsb_release -a
  
   terraform:
     name: 'Terraform'
-    runs-on: ubuntu-latest
+    runs-on: ${{ inputs.Runner }}
     steps:
+    - run: |
+          lsb_release -a
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v2
