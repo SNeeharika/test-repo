@@ -8,12 +8,15 @@ on:
       Name:
         required: true
         type: string
+      Runner:
+        required: true
+        type: string  
 env:
   Credentials: ${{ inputs.Name }}
 jobs:
   job1:
     name: 'job1'
-    runs-on: ubuntu-latest
+    runs-on: ${{ inputs.Runner }}
     steps:
     - run: |
           echo $Credentials
