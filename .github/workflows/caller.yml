@@ -16,7 +16,7 @@ jobs:
     with:
       Project_Id: project-1
       Name: SILVER
-      Runner: ubuntu-latest
+      Runner: ubuntu-18.04
     secrets: inherit
     #Credentials: ${{ secrets.GOOGLE_CREDENTIALS }}
 
